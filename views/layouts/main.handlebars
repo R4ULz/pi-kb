@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krust Burguer</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/de6dc9fc6e.js" crossorigin="anonymous"></script>
+    <script src="/js/script.js" defer></script>
+</head>
+<body class="overflow-x-hidden">
+    <header class="fixed top-0 left-0 z-5 w-screen bg-white h-20 flex items-center justify-center shadow">
+    <div class="w-full h-full bg-white z-5 max-w-screen-2xl px-5 flex justify-between items-center">
+      <a href="/"><img src="/images/logo.png" alt="Logo Krust Burguer" class="w-36 md:w-44"></a>
+      <ul class="hidden items-center gap-5 font-semibold group transition text-lg lg:flex">
+        <a href="#" class="hover:text-red-500 ease-in-out duration-300">
+          <li>Cardápio</li>
+        </a>
+        <a href="#" class="hover:text-red-500 ease-in-out duration-300">
+          <li>Sobre</li>
+        </a>
+        <a href="#" class="hover:text-red-500 ease-in-out duration-300">
+          <li>Contato</li>
+        </a>
+        <a href="#" class="hover:text-red-500 ease-in-out duration-300">
+          <li>Delivery</li>
+        </a>
+      </ul>
+      <div class="flex items-center gap-7">
+        <div class="flex items-center gap-3 md:gap-5">
+          <a href="#" class="relative">
+            <i class="fa-solid fa-basket-shopping text-2xl"></i>
+            <div class="absolute -top-3 -right-3 w-5 h-5 rounded-full bg-red-500 flex items-center justify-center text-white font-semibold text-sm p-1">
+              <span>0</span>
+            </div>
+          </a>
+          <div class="hidden items-center gap-3 md:gap-5 lg:flex">
+            <button class="border border-red-500 rounded-full px-8 py-1 font-semibold"><a href="login">Login</a></button>
+            <button class="border border-red-500 bg-red-500 px-8 py-1 rounded-full text-white font-semibold"><a href="signin">Cadastre-se</a></button>
+          </div>
+        </div>
+        <div class="flex lg:hidden cursor-pointer">
+          <i id="cesta" class="fa-solid fa-bars text-3xl text-red-500"></i>
+        </div>
+      </div>
+    </div>
+    <div id="menu-mobile" class="absolute -z-10 disable-menu flex flex-col w-full p-5 border-b gap-5 transition-all duration-200 ease-in-out lg:hidden bg-white">
+      <ul class="flex flex-col items-start gap-3 font-semibold group transition text-lg">
+        <a href="#" class="hover:text-red-500 ease-in-out duration-300">
+          <li>Cardápio</li>
+        </a>
+        <a href="#" class="hover:text-red-500 ease-in-out duration-300">
+          <li>Sobre</li>
+        </a>
+        <a href="#" class="hover:text-red-500 ease-in-out duration-300">
+          <li>Contato</li>
+        </a>
+        <a href="#" class="hover:text-red-500 ease-in-out duration-300">
+          <li>Delivery</li>
+        </a>
+      </ul>
+      <div class="flex flex-col items-start gap-3">
+        <button class="border border-red-500 rounded-full px-6 py-1 font-semibold">Login</button>
+        <button class="border border-red-500 bg-red-500 px-6 py-1 rounded-full text-white font-semibold">Cadastre-se</button>
+      </div>
+    </div>
+  </header>
+    {{{body}}}
+</body>
+</html>
